@@ -44,4 +44,4 @@ endif()
 add_subdirectory(external)
 
 add_executable(${project_name} "src/main.cpp")
-target_link_libraries(${project_name} ${VULKAN_LIB_LIST})
+target_link_libraries(${project_name} ${VULKAN_LIB_LIST} glfw)
