@@ -45,3 +45,5 @@ add_subdirectory(external)
 
 add_executable(${project_name} "src/main.cpp")
 target_link_libraries(${project_name} ${VULKAN_LIB_LIST} glfw glm)
+target_include_directories(${project_name} PRIVATE ${CMAKE_SOURCE_DIR}/external/glfw/include)
+target_include_directories(${project_name} PRIVATE ${CMAKE_SOURCE_DIR}/external/glm/)
